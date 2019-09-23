@@ -1,0 +1,11 @@
+.warning {
+  padding: 1em;
+  background-color: #ffcc00;
+  color: #fff;
+  margin: 1em;
+  border-radius: 5px;
+  width: 315px;
+  position: absolute;
+  right: -5%;
+  top: 15%;
+}
