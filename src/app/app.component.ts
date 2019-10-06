@@ -27,4 +27,8 @@ export class AppComponent {
   onPChanges() {
     this.serverElements[0].name = 'Changes';
   }
+
+  interval(number) {
+    console.log(number);
+  }
 }
