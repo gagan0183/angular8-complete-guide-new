@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   serverElements = [{type: 'server', name: 'TestServer', content: 'This is server'}];
+  oddNumbers: number[] = [];
+  evenNumbers: number[] = [];
 
    onServerAdded(serverData) {
     this.serverElements.push({
@@ -29,6 +31,12 @@ export class AppComponent {
   }
 
   interval(number) {
-    console.log(number);
+    console.log(this.evenNumbers);
+    if(number % 2 === 0) {
+      this.evenNumbers.push(number);
+    }
+    else {
+      this.oddNumbers.push(number);
+    }
   }
 }
