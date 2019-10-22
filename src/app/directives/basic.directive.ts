@@ -1,7 +1,7 @@
 import { Directive, OnInit, ElementRef } from '@angular/core';
 
 @Directive({
-  selector: '[basicDirective]'
+  selector: '[basic]'
 })
 export class BasicDirective implements OnInit {
   constructor(private elementRef: ElementRef) {

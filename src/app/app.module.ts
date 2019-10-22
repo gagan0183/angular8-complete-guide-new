@@ -9,6 +9,7 @@ import { GameControlComponent } from './game-control/game-control.component';
 import { OddComponent } from './odd/odd.component';
 import { EvenComponent } from './even/even.component';
 import { BasicDirective } from './directives/basic.directive';
+import { BetterDirective } from './directives/better.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BasicDirective } from './directives/basic.directive';
     GameControlComponent,
     OddComponent,
     EvenComponent,
-    BasicDirective
+    BasicDirective,
+    BetterDirective
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
