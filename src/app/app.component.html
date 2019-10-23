@@ -18,4 +18,5 @@
   <app-even *ngFor="let evenNumber of evenNumbers" [number]="evenNumber"></app-even>
   <p better [defaultColor]="'#eeeeee'" [highlightColor]="'red'">This is a style with better directive</p>
   <p basic>This is style with basic directive</p>
+  <p *unless="false">This is shown with structural directive</p>
 </div>
