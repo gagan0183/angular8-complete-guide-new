@@ -19,4 +19,10 @@
   <p better [defaultColor]="'#eeeeee'" [highlightColor]="'red'">This is a style with better directive</p>
   <p basic>This is style with basic directive</p>
   <p *unless="false">This is shown with structural directive</p>
+  <div [ngSwitch]="value">
+    <div *ngSwitchCase="5">The value is 5</div>
+    <div *ngSwitchCase="10">The value is 10</div>
+    <div *ngSwitchCase="100">The value is 100</div>
+    <div *ngSwitchDefault>The value is default</div>
+  </div>
 </div>
