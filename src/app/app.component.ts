@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { LoggingService } from './logging.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [LoggingService]
 })
 export class AppComponent {
   serverElements = [{type: 'server', name: 'TestServer', content: 'This is server'}];
@@ -11,7 +13,10 @@ export class AppComponent {
   evenNumbers: number[] = [];
   value = 9;
 
+  constructor(private loggingService: LoggingService) {}
+
    onServerAdded(serverData) {
+    this.loggingService.logStatus('starts');
     this.serverElements.push({
       type: 'server',
       name: serverData.serverName,
